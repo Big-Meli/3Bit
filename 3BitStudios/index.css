@@ -1,0 +1,137 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS';
+}
+
+body {
+
+  /*background-color: #333;
+  background-image: url("images/random/download.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-y: 10px;
+  background-size: 200%
+  
+  background-color: rgb(93, 188, 210)*/
+  background-color: #333;
+}
+
+a {
+  display: block;
+}
+
+.page-grid {
+  background-color: white;
+  border-color: #333;
+  max-width: 200px;
+  height: 210px;
+  border-radius: 5px;
+  grid-template-columns: repeat(1, auto);
+  transition: 500ms;
+  gap: 10px;
+}
+
+
+.empty-element {
+  max-width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  transition: 500ms;
+}
+
+/*Put page-grid in middle*/
+
+.page-grid:hover {
+  height: 290px;
+  transition: 500ms;
+}
+
+.page-grid:hover > .empty-element {
+  height: 30px;
+}
+
+
+
+.link-games {
+  background-color: white;
+  border: 3px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+  height: 55px;
+  width: 110px;
+  text-align: center;
+  left: 50px;
+  top: 20px;
+  transition: 500ms;
+}
+
+.link-games:hover {
+  background-color: #333;
+  border: 5px solid black;
+  color: white;
+  transition: 500ms;
+  width: 150px;
+  height: 75px;
+  top: 30px;
+}
+
+.link-games:hover ~ .link-team {
+  top: 130px;
+}
+
+.link-games:hover ~ .link-admin-chat {
+  top: 190px;
+}
+
+.link-team {
+  background-color: white;
+  border: 3px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+  height: 55px;
+  width: 110px;
+  text-align: center;
+  left: 50px;
+  top: 80px;
+  transition: 500ms;
+}
+
+.link-team:hover {
+  background-color: #333;
+  border: 5px solid black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  left: 30px;
+  top: 105px;
+}
+
+.link-team:hover ~ .link-admin-chat {
+  top: 210px;
+}
+
+.link-admin-chat {
+  background-color: white;
+  border: 3px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+  height: 55px;
+  width: 110px;
+  text-align: center;
+  left: 50px;
+  top: 140px;
+  transition: 500ms;
+}
+
+.link-admin-chat:hover {
+  top: 175px;
+  width: 150px;
+  height: 75px;
+  left: 28px;
+  background-color: #333;
+  border: 5px solid black;
+  color: white;
+}
